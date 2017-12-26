@@ -1,0 +1,36 @@
+{
+    "createdBy": "Redirector v3.1.1",
+    "createdAt": "2017-12-26T15:37:26.342Z",
+    "redirects": [
+        {
+            "description": "sci-hub",
+            "exampleUrl": "https://sci-hub.io/10.1093/bioinformatics/btw152",
+            "exampleResult": "https://sci-hub.tw/10.1093/bioinformatics/btw152",
+            "error": null,
+            "includePattern": "(.*)://sci-hub\\.[^/]+/(.*)",
+            "excludePattern": "sci-hub\\.tw",
+            "redirectUrl": "$1://sci-hub.tw/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "doi",
+            "exampleUrl": "https://doi.org/10.1093/bioinformatics/btw152",
+            "exampleResult": "https://sci-hub.tw/10.1093/bioinformatics/btw152",
+            "error": null,
+            "includePattern": "(.*)://doi.org/(.*)",
+            "excludePattern": "",
+            "redirectUrl": "$1://sci-hub.tw/$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
