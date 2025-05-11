@@ -5,7 +5,7 @@
         {
             "description": "sci-hub",
             "exampleUrl": "https://sci-hub.io/10.1093/bioinformatics/btw152",
-            "exampleResult": "https://sci-hub.do/10.1093/bioinformatics/btw152",
+            "exampleResult": "https://sci-hub.mk/10.1093/bioinformatics/btw152",
             "error": null,
             "includePattern": "(.*)://sci-hub\\.[^/]+/(.*)",
             "excludePattern": "sci-hub\\.do",
@@ -20,11 +20,11 @@
         {
             "description": "doi",
             "exampleUrl": "https://doi.org/10.1093/bioinformatics/btw152",
-            "exampleResult": "https://sci-hub.do/10.1093/bioinformatics/btw152",
+            "exampleResult": "https://sci-hub.mk/10.1093/bioinformatics/btw152",
             "error": null,
             "includePattern": "(.*)://doi.org/(.*)",
             "excludePattern": "",
-            "redirectUrl": "$1://sci-hub.do/$2",
+            "redirectUrl": "$1://sci-hub.mk/$2",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
